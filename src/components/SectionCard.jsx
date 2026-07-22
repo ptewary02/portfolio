@@ -6,11 +6,9 @@ export default function SectionCard({ children, className = '', id = '' }) {
     <section
       id={id}
       className={`
-        min-w-section-gap-mobile
         h-full
-        ml-20
-        mr-20
-        my-6 p-6 sm:p-8 lg:p-10
+        mx-3 sm:mx-6 md:mx-10 lg:mx-16
+        my-4 sm:my-6 p-4 sm:p-8 lg:p-10
         bg-white/80 dark:bg-slate-900/80 
         backdrop-blur-md 
         rounded-3xl 

@@ -20,8 +20,8 @@ const points = [
 export default function WhatIDo() {
   return (
     
-    <section className="border-t border-outline-variant dark:border-outline py-section-gap-mobile md:py-section-gap-mobile mr-10 ml-10" id="skills">
-      <div className="grid md:grid-cols-2 gap-16 items-center">
+    <section className="border-t border-outline-variant dark:border-outline py-section-gap-mobile md:py-section-gap-mobile mx-2 sm:mx-4 md:mx-8" id="skills">
+      <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
         <div className="order-2 md:order-1 flex justify-center">
           <div className="w-full max-w-md bg-surface-container-low rounded-3xl p-8 aspect-square flex items-center justify-center relative overflow-hidden">
             <span className="material-symbols-outlined text-[200px] text-primary/20 absolute -bottom-10 -right-10">

@@ -29,7 +29,7 @@ export default function Experience() {
   return (
     
     <section
-      className="border-t py-section-gap-mobile mr-10 ml-10 border-outline-variant dark:border-outline"
+      className="border-t py-section-gap-mobile mx-2 sm:mx-4 md:mx-8 border-outline-variant dark:border-outline"
       id="experience"
     >
       <h2 className="font-headline-lg text-headline-lg text-on-surface dark:text-inverse-primary mb-12">

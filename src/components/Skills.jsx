@@ -92,7 +92,7 @@ export default function Skills() {
 
   return (
     <section
-      className="py-section-gap-mobile md:py-section-gap border-t border-outline-variant dark:border-outline mr-10 ml-10"
+      className="py-section-gap-mobile md:py-section-gap border-t border-outline-variant dark:border-outline mx-2 sm:mx-4 md:mx-8"
       id="skills"
     >
       <h2 className="font-headline-lg text-headline-lg text-on-surface dark:text-inverse-primary mb-12">

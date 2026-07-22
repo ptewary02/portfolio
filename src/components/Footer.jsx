@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <SectionCard id='Footer' className="mb-0">
     <footer className="bg-surface-light dark:bg-surface-dark border-t border-outline-variant dark:border-outline">
-      <div className="max-w-container-max mx-auto px-gutter py-16 grid grid-cols-2 md:grid-cols-4 gap-10">
+      <div className="max-w-container-max mx-auto px-4 sm:px-gutter py-12 sm:py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10">
         {/* Logo */}
         <div className="col-span-2 md:col-span-1 flex items-start">
           <span className="font-[Agustina_Regular] text-headline-md text-primary dark:text-inverse-primary">

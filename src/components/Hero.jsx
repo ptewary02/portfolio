@@ -6,7 +6,7 @@ import SectionCard from './SectionCard';
 export default function Hero() {
   return (
     
-    <section className="flex flex-col md:flex-row items-center justify-between md:py-section-gap gap-15 mr-10 ml-10" id="home">
+    <section className="flex flex-col md:flex-row items-center justify-between md:py-section-gap gap-8 sm:gap-10 md:gap-15 mx-2 sm:mx-4 md:mx-8 pt-8 md:pt-0" id="home">
       <div className="w-full md:w-1/2 space-y-5">
         <h2 className="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface dark:text-inverse-primary h-12">
           Hello! I'am
@@ -65,14 +65,14 @@ export default function Hero() {
           </a>
         </div>
         
-        <div className="flex gap-4 pt-6">
-          <a href="#contact" className="px-8 py-3 rounded-lg bg-google-blue text-on-primary font-bold hover:shadow-lg transition-all">
+        <div className="flex flex-wrap gap-4 pt-6">
+          <a href="#contact" className="px-6 sm:px-8 py-3 rounded-lg bg-google-blue text-on-primary font-bold hover:shadow-lg transition-all">
             CONTACT ME
           </a>
           <a
             href={`${import.meta.env.BASE_URL}${personalInfo.resumeUrl}`}
             download="Pravesh_Tewary_Resume.pdf"
-            className="px-8 py-3 rounded-lg bg-google-blue text-on-primary font-bold hover:shadow-lg transition-all hover:bg-primary-container active:scale-95 duration-150 inline-block"
+            className="px-6 sm:px-8 py-3 rounded-lg bg-google-blue text-on-primary font-bold hover:shadow-lg transition-all hover:bg-primary-container active:scale-95 duration-150 inline-block"
           >
             RESUME
           </a>
@@ -80,7 +80,7 @@ export default function Hero() {
       </div>
 
       <div className="w-full md:w-1/2 flex justify-center">
-        <div className="relative w-80 h-80 md:w-105 md:h-105">
+        <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-105 md:h-105">
           <div className="absolute inset-0 bg-primary-container/10 rounded-full blur-3xl animate-pulse" />
           <div className="w-full h-full rounded-full border-8 border-surface-container-high relative z-10 shadow-2xl bg-surface-container-low overflow-hidden">
             <img

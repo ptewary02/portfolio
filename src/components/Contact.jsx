@@ -6,8 +6,8 @@ import { personalInfo, links } from "../data/portfolioData.js";
 export default function Contact() {
   return (
     
-    <section className="py-section-gap-mobile mr-10 ml-10 border-t border-outline-variant dark:border-outline" id="contact">
-      <div className="flex flex-col md:flex-row items-center gap-16">
+    <section className="py-section-gap-mobile mx-2 sm:mx-4 md:mx-8 border-t border-outline-variant dark:border-outline" id="contact">
+      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
         <div className="w-full md:w-1/2 space-y-6">
           <h2 className="font-headline-lg text-headline-lg text-on-surface dark:text-inverse-primary">Reach out to me!</h2>
           <p className="text-on-surface-variant dark:text-on-primary uppercase tracking-widest text-xs font-bold">
@@ -65,7 +65,7 @@ export default function Contact() {
         </div>
 
         <div className="w-full md:w-1/2 flex justify-center">
-          <div className="w-64 h-64 md:w-72 md:h-72 rounded-full border-8 border-primary-container shadow-2xl bg-surface-container-low flex items-center justify-center">
+          <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full border-8 border-primary-container shadow-2xl bg-surface-container-low flex items-center justify-center">
             <div className="w-full h-full rounded-full border-8 border-surface-container-high relative z-10 shadow-2xl bg-surface-container-low overflow-hidden">
               <img
                 src={`${import.meta.env.BASE_URL}${personalInfo.image}`}
