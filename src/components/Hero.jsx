@@ -6,7 +6,7 @@ import SectionCard from './SectionCard';
 export default function Hero() {
   return (
     
-    <section className="flex flex-col md:flex-row items-center justify-between md:py-section-gap gap-8 sm:gap-10 md:gap-15 mx-2 sm:mx-4 md:mx-8 pt-8 md:pt-0" id="home">
+    <section className="mt-8 md:mt-16 flex flex-col md:flex-row items-center justify-between md:py-section-gap gap-8 sm:gap-10 md:gap-15 mx-2 sm:mx-4 md:mx-8 pt-8 md:pt-0" id="home">
       <div className="w-full md:w-1/2 space-y-5">
         <h2 className="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface dark:text-inverse-primary h-12">
           Hello! I'am
