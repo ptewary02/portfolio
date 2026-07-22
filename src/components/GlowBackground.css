@@ -1,0 +1,140 @@
+/* Container fixed behind all content */
+.glow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  filter: blur(100px); /* Deep, soft blur for ambient glow */
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+/* Base blob styling */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  mix-blend-mode: multiply; /* Blends colors smoothly into dark or light backgrounds */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  will-change: transform;
+}
+
+/* Red Blob - Top Left area floating across screen */
+.red {
+  width: 45vw;
+  height: 45vw;
+  max-width: 500px;
+  max-height: 500px;
+  background: rgba(255, 80, 80, 0.7);
+  top: -10%;
+  left: -10%;
+  animation-name: float-red;
+  animation-duration: 18s;
+}
+
+/* Green Blob - Bottom Right drifting upwards */
+.green {
+  width: 50vw;
+  height: 50vw;
+  max-width: 550px;
+  max-height: 550px;
+  background: rgba(40, 220, 130, 0.65);
+  bottom: -10%;
+  right: -10%;
+  animation-name: float-green;
+  animation-duration: 22s;
+}
+
+/* Yellow Blob - Moving diagonally across center */
+.yellow {
+  width: 40vw;
+  height: 40vw;
+  max-width: 450px;
+  max-height: 450px;
+  background: rgba(255, 210, 50, 0.7);
+  bottom: 10%;
+  left: 10%;
+  animation-name: float-yellow;
+  animation-duration: 16s;
+}
+
+/* Blue Blob - Floating across top right */
+.blue {
+  width: 48vw;
+  height: 48vw;
+  max-width: 520px;
+  max-height: 520px;
+  background: rgba(50, 140, 255, 0.7);
+  top: 10%;
+  right: -5%;
+  animation-name: float-blue;
+  animation-duration: 20s;
+}
+
+/* ----------------------------------------------------
+   ANIMATION KEYFRAMES (Organic Multi-point paths)
+---------------------------------------------------- */
+
+@keyframes float-red {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate3d(25vw, 20vh, 0) scale(1.2) rotate(60deg);
+  }
+  66% {
+    transform: translate3d(-10vw, 45vh, 0) scale(0.85) rotate(120deg);
+  }
+  100% {
+    transform: translate3d(15vw, -5vh, 0) scale(1.05) rotate(180deg);
+  }
+}
+
+@keyframes float-green {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(-30vw, -25vh, 0) scale(0.8);
+  }
+  66% {
+    transform: translate3d(-15vw, -50vh, 0) scale(1.15);
+  }
+  100% {
+    transform: translate3d(10vw, -20vh, 0) scale(0.95);
+  }
+}
+
+@keyframes float-yellow {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(20vw, -30vh, 0) scale(1.1);
+  }
+  66% {
+    transform: translate3d(40vw, 10vh, 0) scale(0.9);
+  }
+  100% {
+    transform: translate3d(-5vw, -15vh, 0) scale(1.2);
+  }
+}
+
+@keyframes float-blue {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(-25vw, 35vh, 0) scale(1.25);
+  }
+  66% {
+    transform: translate3d(-45vw, -10vh, 0) scale(0.8);
+  }
+  100% {
+    transform: translate3d(5vw, 20vh, 0) scale(1.1);
+  }
+}
