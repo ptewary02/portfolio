@@ -68,7 +68,7 @@ export default function Contact() {
           <div className="w-64 h-64 md:w-72 md:h-72 rounded-full border-8 border-primary-container shadow-2xl bg-surface-container-low flex items-center justify-center">
             <div className="w-full h-full rounded-full border-8 border-surface-container-high relative z-10 shadow-2xl bg-surface-container-low overflow-hidden">
               <img
-                src={personalInfo.image}
+                src={`${import.meta.env.BASE_URL}${personalInfo.image}`}
                 alt="Pravesh Tewary"
                 className="w-full h-full object-cover scale-205 ml-2"
               />

@@ -6,7 +6,7 @@ const experiences = [
     company: 'Accenture',
     period: 'INTERNSHIP',
     color: 'bg-google-blue',
-    icon: '/assets/Accenture.png',
+    icon: 'assets/Accenture.png',
     duration: "May'26 - July'26",
     linkedin: 'https://www.linkedin.com/posts/pravesh-tewary-2a0ba5294_accentureinternship-proudaccentureintern2026-ugcPost-7482734384299814914-RWEZ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEdeEVgBshUetDDSc9qqD-4h461ZWN3ongc',
     description:
@@ -17,7 +17,7 @@ const experiences = [
     company: 'Indian Institute of Technology (BHU)',
     period: 'INTERNSHIP',
     color: 'bg-google-yellow',
-    icon: '/assets/IIT_BHU.png',
+    icon: 'assets/IIT_BHU.png',
     duration: "May'25 - June'25",
     linkedin: 'https://www.linkedin.com/posts/pravesh-tewary-2a0ba5294_summerinternship-iitbhu-electricalengineering-ugcPost-7346451110427037696-ygKa/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEdeEVgBshUetDDSc9qqD-4h461ZWN3ongc',
     description:
@@ -47,7 +47,7 @@ export default function Experience() {
             >
               <div className="h-24 bg-surface-container dark:bg-surface-container-low flex items-center justify-center">
                 <img
-                  src={exp.icon}
+                  src={`${import.meta.env.BASE_URL}${exp.icon}`}
                   alt={exp.company}
                   className="h-12 object-contain"
                 />

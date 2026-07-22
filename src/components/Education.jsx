@@ -19,7 +19,7 @@ export default function Education() {
 
         {/* Row 1: MMMUT */}
         <div className="row-start-1 col-start-1 relative z-10 w-16 h-16 rounded-full bg-white dark:bg-surface-container-high shadow-md flex items-center justify-center shrink-0 overflow-hidden">
-          <img src="/assets/MMMUT_logo.png" alt="MMMUT logo" className="w-20 h-20 object-contain" />
+          <img src={`${import.meta.env.BASE_URL}assets/MMMUT_logo.png`} alt="MMMUT logo" className="w-20 h-20 object-contain" />
         </div>
         <div className="row-start-1 col-start-2 space-y-0">
           <h3 className="font-headline-md text-headline-md text-on-surface dark:text-inverse-primary">
@@ -38,7 +38,7 @@ export default function Education() {
 
         {/* Row 2: Hallmark World School */}
         <div className="row-start-2 col-start-1 relative z-10 w-16 h-16 rounded-full bg-white dark:bg-surface-container-high shadow-md flex items-center justify-center shrink-0 overflow-hidden">
-          <img src="/assets/HWS_logo.png" alt="Hallmark World School logo" className="w-20 h-20 object-contain" />
+          <img src={`${import.meta.env.BASE_URL}assets/HWS_logo.png`} alt="Hallmark World School logo" className="w-20 h-20 object-contain" />
         </div>
         <div className="row-start-2 col-start-2 space-y-0">
           <h3 className="font-headline-md text-headline-md text-on-surface dark:text-inverse-primary">

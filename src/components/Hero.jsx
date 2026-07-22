@@ -70,7 +70,7 @@ export default function Hero() {
             CONTACT ME
           </a>
           <a
-            href={personalInfo.resumeUrl}
+            href={`${import.meta.env.BASE_URL}${personalInfo.resumeUrl}`}
             download="Pravesh_Tewary_Resume.pdf"
             className="px-8 py-3 rounded-lg bg-google-blue text-on-primary font-bold hover:shadow-lg transition-all hover:bg-primary-container active:scale-95 duration-150 inline-block"
           >
@@ -84,7 +84,7 @@ export default function Hero() {
           <div className="absolute inset-0 bg-primary-container/10 rounded-full blur-3xl animate-pulse" />
           <div className="w-full h-full rounded-full border-8 border-surface-container-high relative z-10 shadow-2xl bg-surface-container-low overflow-hidden">
             <img
-              src={personalInfo.image}
+              src={`${import.meta.env.BASE_URL}${personalInfo.image}`}
               alt="Pravesh Tewary"
               className="w-full h-full object-cover scale-205 ml-3"
             />

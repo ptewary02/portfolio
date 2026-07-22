@@ -51,7 +51,7 @@ export default function Navbar() {
 
           {/* Resume Button fixed as an <a> tag */}
           <a
-            href="/assets/resume.pdf"
+            href={`${import.meta.env.BASE_URL}assets/resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 rounded-lg bg-primary text-on-primary font-bold hover:bg-primary-container transition-colors active:scale-95 duration-150 inline-block"

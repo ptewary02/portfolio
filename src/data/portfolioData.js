@@ -3,8 +3,8 @@ export const personalInfo = {
   role: "Aspiring Software Development Engineer",
   bio: "Final Year B.Tech student passionate about full-stack web development, data structures & algorithms, and building scalable software solutions.",
   email: "your.email@example.com",
-  resumeUrl: "/assets/resume.pdf",
-  image: "/assets/image.png",
+  resumeUrl: "assets/resume.pdf",
+  image: "assets/image.png",
   aboutme: "I'm a final-year B.Tech student and a tech enthusiast with a strong foundation in Data Structures and Algorithms. I am a full-stack web developer, building end-to-end projects with the MERN stack, from designing scalable backends to crafting responsive frontends. I enjoy solving real-world problems through clean, efficient code. Alongside this, I'm actively learning AI, exploring how it can be integrated into modern web applications to build smarter, more impactful products.",
 };
 
