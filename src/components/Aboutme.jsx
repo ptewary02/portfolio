@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     
     <section
-      className="border-t border-outline-variant dark:border-outline relative overflow-hidden md:py-section-gap-mobile animate-fade-in mx-2 sm:mx-4 md:mx-8"
+      className="mt-8 mb-8 border-t border-outline-variant dark:border-outline relative overflow-hidden md:py-section-gap-mobile animate-fade-in mx-2 sm:mx-4 md:mx-8"
       id="about"
     >
       {/* Content */}
